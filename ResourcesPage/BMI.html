@@ -11,15 +11,127 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div id="pageWrapper">
+	<div id="pageWrapper" style="height: 1280px;">
 		<section id="page" class="bmi-work">
-				<h1>Hãy cho chúng tôi biết về tình trạng của bạn</h1>
-				<p>Một số thôn gtin cần thiết sẽ khiến chúng tôi đưa ra một số lựa chọn dễ dàng hơn dành cho bạn</p>
-				<hr>
-				<div class="row">
-					<div class=""></div>
-				</div>
+			<h1>Hãy cho chúng tôi biết về tình trạng của bạn</h1>
+			<p>Một số thông tin cần thiết sẽ khiến chúng tôi đưa ra một số lựa chọn dễ dàng hơn dành cho bạn</p>
+			<hr>
 		</section>
+		<div class="bmi-input">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="bmi-title">
+						<div class="bmi-title-content">
+							<span>Chúng tôi cần một số thông tin chi tiết từ bạn. Hãy điền thông tin đó vào đây, chúng tôi sẽ đưa ra nhưng thông tin chính xác nhất dành cho bạn.</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<form class="bmi-form">
+						<div class="bmi-input-form">
+							<label>Chiều cao :</label>
+							<input type="number" name="Chiều cao của bạn" class="bmi-input-cm" id="height">
+						</div>
+						<div class="bmi-input-form">
+							<label>Cân nặng :</label>
+							<input type="number" name="Cân nặng của bạn" class="bmi-input-cm" id="weight">
+						</div>
+						<div class="row">
+							<button class="btn btn-outline btn-x1 page-scroll" type="button" onclick="check()"><span>Kiểm tra</span></button> 
+							<div style="padding-top: 6px;padding-left: 74px;" class="col-4">BMI : </div>
+							<div id="BMI" style="padding-top: 6px;" class="col-1">0</div>
+						</div>
+						<div style="padding-left: 158px;" id="tinhtrang"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div style="text-align: center;">
+			<div style="padding-top: 183px; padding-left: 297px;">
+				<hr style="width: 50%;">
+			</div>
+		</div>
+		<section id="page" class="bmi-work" style="padding: 45px 85px!important;">
+			<h1>Cách đánh giá chỉ số BMI</h1>
+			<p style="padding: 25px 101px!important;">Đối với người lớn từ 20 tuổi trở lên, Sử dụng bảng phân loại chuẩn cho cả nam và nữ để đánh giá chỉ số BMI.</p>
+		</section>
+		<div class="bmi-display">
+			<div class="row">
+				<div class="col-lg-7" >
+					_ BMI < 16 : Gầy độ III
+						<br>
+						<br>
+					_ 16 ≤ BMI <17 : Gầy độ II
+						<br>
+						<br>
+					_ < 18.5 : Gầy độ I
+						<br>
+						<br>
+					_ 18.5 ≤ BMI < 25 : Bình thường
+						<br>
+						<br>
+					_ 25 ≤ BMI < 30 : Thừa cân
+						<br>
+						<br>
+					_ 30 ≤ BMI 35 : Béo phì độ 1
+						<br>
+						<br>
+					_ 35 ≤ BMI < 40 : Béo phì độ II
+						<br>
+						<br>
+					_ BMI > 40 : Béo phì độ III
+				</div>
+				<div class="col-lg-5">
+					<h4>Tham khảo chế độ ăn uống và tập luyện tại đây</h4>
+					<div class="sqs-block button-block sqs-block-button">
+						<div class="sqs-block-content">
+							<div class="sqs-block-button-container--center">
+								<a href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none; border-radius: 20px!important;" target="_blank">Chế độ ăn</a>
+							</div>
+						</div>
+					</div>
+					<div class="sqs-block button-block sqs-block-button">
+						<div class="sqs-block-content">
+							<div class="sqs-block-button-container--center">
+								<a href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none;  border-radius: 20px;" target="_blank">Luyện tập</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	function roundToTwo(num) {    
+    return +(Math.round(num + "e+2")  + "e-2");
+}
+    var tinhtrang = "";
+    function check() {
+    	var chieucao = document.getElementById('height').value/100;
+	    var cannang =  document.getElementById('weight').value;
+            var  chiSoBMI= cannang / (chieucao  * chieucao );
+           chiSoBMI= roundToTwo(chiSoBMI)
+           
+            if (chiSoBMI <16 ) {
+            	$('#tinhtrang').html("Gầy cấp độ III")
+            } else if (16 <= chiSoBMI && chiSoBMI < 17 ) {
+            	$('#tinhtrang').html("Gầy cấp độ II")
+            }else if (17 <= chiSoBMI && chiSoBMI < 18.5  ) {
+            	$('#tinhtrang').html("Gầy cấp độ I")
+            }else if (18.5 <= chiSoBMI && chiSoBMI < 25 ) {
+            	$('#tinhtrang').html("Bình thường")
+            }else if (25 <= chiSoBMI && chiSoBMI < 30  ) {
+            	$('#tinhtrang').html(" Thừa cân")
+            }else if (30 <= chiSoBMI && chiSoBMI < 35  ) {
+            	$('#tinhtrang').html("Béo phì cấp độ I")
+            }else if (35 <= chiSoBMI && chiSoBMI < 40  ) {
+            	$('#tinhtrang').html("Béo phì cấp độ II")
+            }else  if ( chiSoBMI >= 40  ){
+            	$('#tinhtrang').html("Béo phì cấp độ III")
+            }
+             $('#BMI').html(chiSoBMI)
+
+		}
+</script>
 </html>
