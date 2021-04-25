@@ -14,6 +14,7 @@ $(function () {
 						Welcome: ${user.email}
 						`)
 					check = true;
+					$('#myModal').modal('hide');
 				}
 			}
 			if (check==false) {
@@ -22,7 +23,13 @@ $(function () {
 		})
 	});
 
-
+// Mobie menu
+ var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 
 })
 
