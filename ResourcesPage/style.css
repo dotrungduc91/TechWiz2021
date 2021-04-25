@@ -83,7 +83,7 @@ iframe {
 }
 
 .sqs-block-button-element--small {
-	border-width: 2px;
+	border-width: 1px;
     border-style: solid;
     background-color: transparent;
     transition: 0.1s background-color linear, 0.1s color linear;
@@ -297,4 +297,106 @@ hr {
     display: block;
     margin: 1em 0;
     padding: 0;
+}
+
+.bmi-input {
+	float: left;
+	padding: 0px 101px;	
+	margin-top: -50px;
+	padding-bottom: 50px;
+}
+
+.bmi-input-form {
+	margin-bottom: 20px;
+	width: 100%;
+	clear: left;
+    float: left;
+    margin-left: 0;
+}
+
+.bmi-input-form label {
+    font-size: 16px;
+    color: #444444;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 3px 0;
+    width: auto;
+    display: block;
+    float: none;
+    max-width: 100%;
+    vertical-align: baseline;
+    font-style: inherit;
+    outline: 0;
+    border: 0;
+}
+
+.bmi-input-form input {
+	height: 32px;
+    line-height: 1.3;
+    color: #555555;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 100%;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: normal;
+    margin-bottom: 0;
+    background-color: transparent!important;
+    border: 1px solid #ccc!important;
+    -webkit-box-shadow: none!important;
+    font-size: 16px!important;
+    -webkit-transition: all 0.2s linear;
+}
+
+.bmi-title {
+	padding-top: 23px;
+}
+
+form .btn {
+	background: transparent;
+	font-size: 16px;
+	font-weight: 400;
+    border-radius: 8px;
+    border: 1px solid #272727;
+    color: #272727;
+    text-align: center;
+    float: none;
+    -webkit-transition: .5s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+}
+
+button {
+	-webkit-appearance: button;
+	overflow: visible;
+	margin: 0;
+    font: inherit;
+}
+
+form .btn:hover {
+	background: #272727;
+	color: #fff;
+	border-color: #272727;
+}
+
+.bmi-display {
+	padding: 0px 150px;
+}
+
+body h4 {
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #444;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 1.1em;
 }

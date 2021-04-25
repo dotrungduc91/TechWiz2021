@@ -85,14 +85,14 @@
 					<h4>Tham khảo chế độ ăn uống và tập luyện tại đây</h4>
 					<div class="sqs-block button-block sqs-block-button">
 						<div class="sqs-block-content">
-							<div class="sqs-block-button-container--center">
-								<a href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none; border-radius: 20px!important;" target="_blank">Chế độ ăn</a>
+							<div class="sqs-block-button-container--center" >
+								<a href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none; border-radius: 20px!important;" target="_blank" id="chedoan" >Chế độ ăn</a>
 							</div>
 						</div>
 					</div>
 					<div class="sqs-block button-block sqs-block-button">
 						<div class="sqs-block-content">
-							<div class="sqs-block-button-container--center">
+							<div class="sqs-block-button-container--center" id="chedoltap">
 								<a href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none;  border-radius: 20px;" target="_blank">Luyện tập</a>
 							</div>
 						</div>
@@ -103,6 +103,7 @@
 	</div>
 </body>
 <script type="text/javascript">
+	// window.location.href = "http://google.com";
 	function roundToTwo(num) {    
     return +(Math.round(num + "e+2")  + "e-2");
 }
@@ -115,12 +116,14 @@
            
             if (chiSoBMI <16 ) {
             	$('#tinhtrang').html("Gầy cấp độ III")
+
             } else if (16 <= chiSoBMI && chiSoBMI < 17 ) {
             	$('#tinhtrang').html("Gầy cấp độ II")
             }else if (17 <= chiSoBMI && chiSoBMI < 18.5  ) {
             	$('#tinhtrang').html("Gầy cấp độ I")
             }else if (18.5 <= chiSoBMI && chiSoBMI < 25 ) {
             	$('#tinhtrang').html("Bình thường")
+            	$('#chedoan').attr(`href`,"https://www.facebook.com/NPhanDong/")
             }else if (25 <= chiSoBMI && chiSoBMI < 30  ) {
             	$('#tinhtrang').html(" Thừa cân")
             }else if (30 <= chiSoBMI && chiSoBMI < 35  ) {
