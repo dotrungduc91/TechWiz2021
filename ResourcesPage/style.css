@@ -1,0 +1,300 @@
+#pageWrapper {
+	max-width: 920px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#page {
+	margin: 0 auto;
+	padding: 80px 85px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#maincontent {
+	margin-right: 280px;
+}
+
+.entry-title {
+	margin-top: 0;
+}
+
+body h1 {
+	color: #444;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: "Helvetica",arial,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+}
+
+.meta {
+	color: #aaa;
+}
+
+.published {
+	font-size: 14px;
+	font-family: proxima-nova;
+}
+
+.entry-content {
+	margin: 1em 0;
+}
+
+p {
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6em;
+    letter-spacing: 0px;
+    margin: 0 0 1em;
+    color: #444; 
+    font-size: 16px;
+}
+
+.post-divider {
+	margin-top: 30px;
+    padding-top: 30px;
+}
+
+iframe {
+	margin-top: 60px;
+	border: none;
+	width: 100%;
+	height: 264px;
+}
+
+.sqs-block:not(.sqs-block-html):not(.sqs-block-markdown) {
+    clear: both;
+}
+
+.sqs-block {
+    padding-left: 17px;
+    padding-right: 17px;
+    position: relative;
+    height: auto;
+    padding-top: 17px;
+}
+
+.sqs-block-button-element--small {
+    color: #272727;
+}
+
+.sqs-block-button-element--small {
+	border-width: 2px;
+    border-style: solid;
+    background-color: transparent;
+    transition: 0.1s background-color linear, 0.1s color linear;
+}
+
+.sqs-block-button-element--small {
+	padding: 13px 26px;
+	font-family: proxima-nova;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-color: #272727;
+}
+
+.sqs-block-button-element {
+	display: inline-block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    appearance: none;
+    line-height: normal;
+}
+
+.sqs-block-button-container--center {
+	text-align: center;
+}
+
+.sqs-block-button-container--center a:hover {
+	color: #fff;
+	background: #272727;
+}
+
+.collection-type-blog.blog-sidebar-right #sidebarWrapper {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    width: 240px;
+}
+
+.sqs-layout > .sqs-row {
+    margin-left: -17px;
+    margin-right: -17px;
+}
+
+.sqs-row {
+    width: auto !important;
+}
+
+.columns-1 [class*=sqs-col-] {
+    width: 100% !important;
+}
+
+[class*=sqs-col]:last-child {
+    padding-right: 0;
+}
+
+[class*=sqs-col] {
+    float: left;
+}
+
+.sqs-layout:not(.sqs-editing) .sqs-row .sqs-block:not(.float):not(.sqs-feature-gated-wrapper):first-child {
+    padding-top: 0;
+}
+
+.sqs-block:not(.sqs-block-html):not(.sqs-block-markdown) {
+    clear: both;
+}
+
+[class*=sqs-col] .sqs-block {
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.sqs-block {
+    position: relative;
+    height: auto;
+    padding-bottom: 17px;
+}
+
+.intrinsic {
+    margin: auto;
+}
+
+figure {
+	display: block;
+}
+
+.image-block-wrapper {
+    line-height: 0;
+    text-align: center;
+    position: relative;
+}
+
+#sidebarWrapper {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    width: 240px;
+}
+
+.image-block-wrapper img {
+    max-width: none;
+}
+
+.gym-search {
+	text-align: center;
+}
+
+.gym-space {
+	padding-top: 35px;
+}
+
+.gym-title p {
+	right: 0;
+}
+
+.gym-colum {
+	padding-left: 17px;
+    padding-right: 17px;
+    position: relative;
+    height: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 640px) {
+	#page {
+	    position: static !important;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#page {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 20px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	#maincontent {
+		margin: 0 !important;
+		position: static !important;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	#sidebarWrapper {
+		width: auto !important;
+	    position: static !important;
+	    margin-top: 100px;
+	    float: none;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	iframe {
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#page {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 20px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#sidebarWrapper {
+		right: 27px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.gym-img {
+		margin-top: 40px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.gym-img {
+		margin-top: 80px;
+	}
+}
+
+/* BMI */
+
+.bmi-work {
+	text-align: center;
+}
+
+.bmi-work p {
+	padding: 57px 101px;
+}
+
+hr {
+	border: none;
+    color: #bbb;
+    background-color: #bbb;
+    height: 1px;
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+}
