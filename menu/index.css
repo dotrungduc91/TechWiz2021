@@ -3,6 +3,7 @@
 #welcomeUser{
 	color: black;
 	width: 30%;
+	position: fixed;
 	top: 0px;
 	right: 0px;
 	color: #4db8ff;
@@ -22,8 +23,11 @@
 .navigation{
 	padding-left: 0px;
 	padding-right: 0px;
+	position: fixed;
+	bottom: 5%;
 	width: 100%;
 	background: black;
+	opacity: 0.5;
 }
 
   .navigation .navbar {
@@ -48,6 +52,7 @@
   }
 
    .navigation .navbar ul {
+ 	width: 65%;
  	justify-content: center;
  }
 

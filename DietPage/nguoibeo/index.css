@@ -21,7 +21,8 @@
 /*THANH MENU*/
 .navigation{
 	padding-left: 0px;
-	padding-right: 0px;
+	padding-right: 0px;s
+	bottom: 5%;
 	width: 100%;
 	background: black;
 }
@@ -48,6 +49,7 @@
   }
 
    .navigation .navbar ul {
+ 	width: 65%;
  	justify-content: center;
  }
 

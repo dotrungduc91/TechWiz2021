@@ -2,10 +2,12 @@
 <html>
 <head>
 	<title></title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  
 </head>
 <body>
 <!-- menu pc -->
-<div class="navigation d-none d-lg-block">
+  <div class="navigation d-none d-lg-block">
     <nav class="navbar navbar-expand-sm  navbar-dark">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Fit 4 Life</a>
@@ -14,8 +16,8 @@
         </div>
         <ul class="navbar-nav">
           <li ><a href="">Trang chủ</a></li>
-          <li><a href="#">Chỉ số BMI</a></li>
-          <li><a href="#">Địa chỉ luyện tập</a></li>
+          <li><a href="../ResourcesPage/ResourcesPage/BMI.html">Chỉ số BMI</a></li>
+          <li><a href="../ResourcesPage/ResourcesPage/resources.html">Địa chỉ luyện tập</a></li>
           <li><a href="#">Khóa học</a></li>
            <li><a href="#">Giới thiệu</a></li>
           <li><a href="#">Liên hệ</a></li>
@@ -26,7 +28,7 @@
 
  <!--  menu mobie -->
    <!-- Navigation cho Mobile -->
-    <div class="navigation_mobile d-block d-lg-none">
+        <div class="navigation_mobile d-block d-lg-none">
 <div class="mobile-container">
 <!-- Top Navigation Menu -->
 <div class="topnav">
@@ -34,10 +36,11 @@
   <div id="myLinks">
     <a href="#">Trang chủ</a>
     <a href="../ResourcesPage/ResourcesPage/BMI.html">Chỉ số BMI</a>
-    <a href="#">Địa chỉ luyện tập</a>
+    <a href="../ResourcesPage/ResourcesPage/resources.html">Địa chỉ luyện tập</a>
     <a href="#">Khóa học</a>
     <a href="#">Giới thiệu</a>
     <a href="#">Liên hệ</a>
+    <a type="button" data-toggle="modal" data-target="#myModal">Đăng nhập</a>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -45,9 +48,18 @@
 </div>
 <!-- End smartphone / tablet look -->
 </div>
-
+  <div id="welcomeUserMobile" class="d-block d-lg-none"></div>
   </div>
 
   
 </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="https://itexpress.vn/js/noel_black.js"></script>   -->
+  <script type="text/javascript" src="index.js"></script>
