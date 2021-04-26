@@ -2,15 +2,18 @@ $(function () {
 	setInterval(changeBackground,2000);
 
 	$("#loginBtn").click(function(){
+		console.log("??")
 		var check = false;
 		$.getJSON("users.json", function (data) {
 			var email  = $("#email").val();
 			var pwd  = $("#pwd").val();
-			console.log(data);
-			console.log(typeof data)
 			for(user of data){
 				if(user.email==email && user.password == pwd){
 					$("#welcomeUser").html(`
+						Welcome: ${user.email}
+						`)
+
+					$("#welcomeUserMobile").html(`
 						Welcome: ${user.email}
 						`)
 					check = true;

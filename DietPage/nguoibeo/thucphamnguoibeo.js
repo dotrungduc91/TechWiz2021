@@ -3,7 +3,6 @@ $(document).ready(function(){
 });
 
 function loadData(){
-	alert("ok");
 	$.getJSON("thuc_pham_nguoi_beo.json", function(data){
 		console.log(data);
 		for(element of data){
