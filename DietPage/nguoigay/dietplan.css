@@ -47,7 +47,7 @@ label{
 	border-radius: 25px;
 }
 .btn_xemthem:hover{
-	background-color: black;
+	background-color: #272727;
 	color: white;
 }
 .text_video{
@@ -57,7 +57,7 @@ label{
 	font-weight: bold;
 	text-align: center;
 	padding: 2% 2%;
-	background-color: black;
+	background-color: #272727;
 	color : white;
 }
 
