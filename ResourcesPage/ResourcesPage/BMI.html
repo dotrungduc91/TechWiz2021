@@ -29,113 +29,151 @@
 				<div class="col-lg-6">
 					<form class="bmi-form">
 						<div class="bmi-input-form">
-							<label>Chiều cao (cm) :</label>
+							<label>Chiều cao :</label>
 							<input type="number" name="Chiều cao của bạn" class="bmi-input-cm" id="height">
 						</div>
 						<div class="bmi-input-form">
-							<label>Cân nặng (kg) :</label>
+							<label>Cân nặng :</label>
 							<input type="number" name="Cân nặng của bạn" class="bmi-input-cm" id="weight">
 						</div>
 						<div class="row">
-							<button class="btn btn-outline btn-x1 page-scroll" type="button" onclick="check()"><span>Kiểm tra</span></button> 
-							<div style="padding-top: 6px;padding-left: 74px;" class="col-4">BMI : </div>
-							<div id="BMI" style="padding-top: 6px;" class="col-1">0</div>
+							<div class="col-5">
+								<button class="btn btn-outline btn-x1 page-scroll" type="button" onclick="check()"><span>Kiểm tra</span></button> 
+							</div>
+							<div class="col-5">
+								<button class="btn btn-outline btn-x1 page-scroll" type="button" onclick="Reset()"><span>Reset</span></button>  
+							</div>
+							
 						</div>
-						<div style="padding-left: 158px;" id="tinhtrang"></div>
+						<div style="padding-left: 158px;" ></div>
 					</form>
 				</div>
-			</div>
-		</div>
-		<div style="text-align: center;">
-			<div style="padding-top: 183px; padding-left: 297px;">
-				<hr style="width: 50%;">
-			</div>
-		</div>
-		<section id="page" class="bmi-work" style="padding: 45px 85px!important;">
-			<h1>Cách đánh giá chỉ số BMI</h1>
-			<p style="padding: 25px 101px!important;">Đối với người lớn từ 20 tuổi trở lên, Sử dụng bảng phân loại chuẩn cho cả nam và nữ để đánh giá chỉ số BMI.</p>
-		</section>
-		<div class="bmi-display">
-			<div class="row">
-				<div class="col-lg-7" >
-					_ BMI < 16 : Gầy độ III
-						<br>
-						<br>
-					_ 16 ≤ BMI <17 : Gầy độ II
-						<br>
-						<br>
-					_ < 18.5 : Gầy độ I
-						<br>
-						<br>
-					_ 18.5 ≤ BMI < 25 : Bình thường
-						<br>
-						<br>
-					_ 25 ≤ BMI < 30 : Thừa cân
-						<br>
-						<br>
-					_ 30 ≤ BMI 35 : Béo phì độ 1
-						<br>
-						<br>
-					_ 35 ≤ BMI < 40 : Béo phì độ II
-						<br>
-						<br>
-					_ BMI > 40 : Béo phì độ III
-				</div>
-				<div class="col-lg-5">
-					<h4>Tham khảo chế độ ăn uống và tập luyện tại đây</h4>
-					<div class="sqs-block button-block sqs-block-button">
-						<div class="sqs-block-content">
-							<div class="sqs-block-button-container--center" >
-								<a  href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none; border-radius: 20px!important;"target="_blank" id="chedoan" onclick="chedoanChangePage()" >Chế độ ăn</a>
+            
+
+				<div style="margin-top: 40px; width: 100%; display: none;" id="showtt">
+					<div class="bmi-border">
+						<div class="bmi-border-title">
+							<div class="bmi-content" style="position: absolute; margin-top: -30px; background-color: #fff;" >
+								<span>Thông tin</span>
 							</div>
+							<div class="row">
+								<div class="col-4"><span>Chỉ số BMI của bạn là : </span></div>
+								<div class="col-8"><div id="BMI" style="" class="col-1"></div></div>
+								<div class="col-4" style="margin-top: 7px;"><span>Tình trạng của bạn là : </span></div>
+								<div class="col-8" style="margin-top: 7px;" id="tinhtrang"></div>
+								<div class="col-4" style="margin-top: 7px;"><span>Cân nặng phù hợp:  </span></div>
+								<div class="col-8" style="margin-top: 7px;" id="cann"></div>
+							</div>
+							
+							
 						</div>
-					</div>
-					<div class="sqs-block button-block sqs-block-button">
-						<div class="sqs-block-content">
-							<div class="sqs-block-button-container--center" id="chedoltap">
-								<a  href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none;  border-radius: 20px;"target="_blank" onclick="chedoluyentapChangePage()">Luyện tập</a>
+						<div class="bmi-border-display">
+							<span></span>
+						</div>
+
+						<div class="bmi-border-import">
+							<h4>Tham khảo chế độ ăn uống và tập luyện tại đây</h4>
+							<div class="row">
+								<div class="col-5">
+									<div class="sqs-block button-block sqs-block-button">
+										<div class="sqs-block-content">
+											<div class="sqs-block-button-container--center" >
+												<a href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none; border-radius: 20px!important;" target="_blank" id="chedoan" >Chế độ ăn</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-5">
+									<div class="sqs-block button-block sqs-block-button">
+										<div class="sqs-block-content">
+											<div class="sqs-block-button-container--center" id="chedoltap">
+												<a href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none;  border-radius: 20px;" target="_blank">Luyện tập</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 		</div>
+
+
+			
+
+
+				
 	</div>
 </body>
 <script type="text/javascript">
-	
+	// window.location.href = "http://google.com";
 	function roundToTwo(num) {    
     return +(Math.round(num + "e+2")  + "e-2");
 }
+
+$(document).ready(function(){
+  $("button").click(function(){
+   
+  });
+});
     var tinhtrang = "";
-    var chiSoBMI;
     function check() {
     	var chieucao = document.getElementById('height').value/100;
 	    var cannang =  document.getElementById('weight').value;
-            chiSoBMI= cannang / (chieucao  * chieucao );
+            var  chiSoBMI= cannang / (chieucao  * chieucao );
            chiSoBMI= roundToTwo(chiSoBMI)
            
             if (chiSoBMI <16 ) {
-            	$('#tinhtrang').html("Gầy cấp độ III")
+            	$('#tinhtrang').html("Bạn gầy cấp độ III")
 
             } else if (16 <= chiSoBMI && chiSoBMI < 17 ) {
-            	$('#tinhtrang').html("Gầy cấp độ II")
+            	$('#tinhtrang').html("Bạn gầy cấp độ II")
+            	var cnangphop = roundToTwo(20*chieucao*chieucao);
+           		 $('#cann').html(cnangphop)
             }else if (17 <= chiSoBMI && chiSoBMI < 18.5  ) {
-            	$('#tinhtrang').html("Gầy cấp độ I")
+            	$('#tinhtrang').html("Bạn gầy cấp độ I")
+            	var cnangphop = roundToTwo(20*chieucao*chieucao);
+            	$('#cann').html(cnangphop)
             }else if (18.5 <= chiSoBMI && chiSoBMI < 25 ) {
-            	$('#tinhtrang').html("Bình thường")
+            	$('#tinhtrang').html("Bạn đang cân đối")
+            	$('#chedoan').attr(`href`,"https://www.facebook.com/NPhanDong/")
+            	$('#cann').html("Bạn cần duy trì cân nặng này")
             }else if (25 <= chiSoBMI && chiSoBMI < 30  ) {
-            	$('#tinhtrang').html(" Thừa cân")
+            	$('#tinhtrang').html("Bạn đang thừa cân")
+            	var cnangphop = roundToTwo(20*chieucao*chieucao);
+            $('#cann').html(cnangphop)
             }else if (30 <= chiSoBMI && chiSoBMI < 35  ) {
-            	$('#tinhtrang').html("Béo phì cấp độ I")
+            	$('#tinhtrang').html("Bạn béo phì cấp độ I")
+            	var cnangphop = roundToTwo(20*chieucao*chieucao);
+            $('#cann').html(cnangphop)
             }else if (35 <= chiSoBMI && chiSoBMI < 40  ) {
-            	$('#tinhtrang').html("Béo phì cấp độ II")
+            	$('#tinhtrang').html("Bạn béo phì cấp độ II")
+            	var cnangphop = roundToTwo(20*chieucao*chieucao);
+            $('#cann').html(cnangphop)
             }else  if ( chiSoBMI >= 40  ){
-            	$('#tinhtrang').html("Béo phì cấp độ III")
+            	$('#tinhtrang').html("Bạn béo phì cấp độ III")
+            	var cnangphop = roundToTwo(20*chieucao*chieucao);
+            $('#cann').html(cnangphop)
+            }else{
+            	// $("#showtt").slideToggle();
             }
-             $('#BMI').html(chiSoBMI)
-		}
 
+             $('#BMI').html(chiSoBMI)
+
+             if(chieucao || cannang){
+ 				$("#showtt").show();
+             }
+             
+
+		}
+		function Reset() {
+          document.getElementById('height').value = '';
+	      document.getElementById('weight').value = '';
+	       $('#BMI').html("")
+	       $('#tinhtrang').html("")
+	        $('#cann').html("")
+	        	$("#showtt").hide();
+		}
 		function chedoanChangePage(){
 			if (chiSoBMI<18.5) {
 				window.location.href = "../../DietPage/nguoigay/diet_plan_ng_gay.html";
@@ -157,4 +195,4 @@ window.location.href = "../../workoutPage/fat/listFat.html";
 		}
 	}
 </script>
-</html
+</html>
