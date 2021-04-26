@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8">
+        <title>Education for you</title>
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            * {
+                  box-sizing: border-box;
+                }
+
+                .container1 {
+                  position: relative;
+                }
+
+                .mySlides {
+                  display: none;
+                }
+
+                .cursor {
+                  cursor: pointer;
+                }
+
+                .prev,
+                .next {
+                  cursor: pointer;
+                  position: absolute;
+                  top: 40%;
+                  width: auto;
+                  padding: 16px;
+                  margin-top: -50px;
+                  color: white;
+                  font-weight: bold;
+                  font-size: 20px;
+                  border-radius: 0 3px 3px 0;
+                  user-select: none;
+                  -webkit-user-select: none;
+                }
+
+                .next {
+                  right: 0;
+                  border-radius: 3px 0 0 3px;
+                }
+
+                .prev:hover,
+                .next:hover {
+                  background-color: rgba(0, 0, 0, 0.8);
+                }
+
+                .numbertext {
+                  color: #f2f2f2;
+                  font-size: 12px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  top: 0;
+                }
+
+                .caption-container {
+                  text-align: center;
+                  background-color: #222;
+                  padding: 2px 16px;
+                  color: white;
+                }
+
+                .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+                }
+
+                .column {
+                  float: left;
+                  width: 16.66%;
+                }
+
+                .demo {
+                  opacity: 0.6;
+                }
+
+                .active,
+                .demo:hover {
+                  opacity: 1;
+                }
+                .shopcart-btn {
+                  display: block;
+                  width: 60px;
+                  height: 60px;
+                  position: fixed;
+                  right: 0;
+                  background: #fff;
+                  border: 1px solid #e2e2e2;
+                  border-right: none;
+                  border-radius: 4px 0 0 4px;
+                  z-index: 99;
+                  cursor: pointer;
+                  top: 270px;
+              }
+
+              .shopcart-btn .shopcart-number {
+                width: 20px;
+                height: 20px;
+                background: #E53808;
+                border-radius: 50%;
+                text-align: center;
+                color: #fff;
+                line-height: 20px;
+                font-size: 12px;
+                font-weight: bold;
+                margin-top: -10px;
+                margin-left: 10px;
+            }
+
+           .shopcart-btn .shopcart-number {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+          #chon  .add :hover{
+           cursor: pointer;
+           background-color: #e8d8c3;
+
+         }
+         .add{
+              padding-left: 0px;
+    padding-right: 0px;
+          border: 1px solid #e39127;
+           border-radius: 5px;
+         }
+
+         .addi{
+          color: #e39127;
+          text-align: center;
+          padding-top: 10px;
+              padding-left: 39px;
+    padding-right: 39px;
+    padding-bottom: 10px;
+         }
+        </style>
+   </head>
+
+
+   <header></header>
+
+
+   <body>
+        <div class="container " style="margin-bottom: 20px; margin-top: 20px; width: 60%;">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-xs-12">
+
+                    <div class="card">
+
+                        <!-- Begin -->
+<!-- 
+                        <div class="card-header" style="background-color: orange; font-weight: bold; color: white;">
+                                <h3>YOGA LIFE</h3>
+                        </div>
+                        <div class="card-body" style="">
+                            <div class="container1">
+
+                                  <div class="mySlides" style="">
+                                    <div class="numbertext">1 / 6</div>
+                                      <img src="https://bom.to/73UwpZuqW4a1J" style="width:100%;">
+                                  </div>
+
+                                  <div class="mySlides">
+                                    <div class="numbertext">2 / 6</div>
+                                      <img src="https://bom.to/njrdtAbeHGjY6" style="width:100%">
+                                  </div>
+
+                                  <div class="mySlides">
+                                    <div class="numbertext">3 / 6</div>
+                                      <img src="https://bom.to/a1IMP1RPfvWlj" style="width:100%">
+                                  </div>
+
+                                  <div class="mySlides">
+                                    <div class="numbertext">4 / 6</div>
+                                      <img src="https://bom.to/z2zrwdAa4daub" style="width:100%">
+                                  </div>
+                                  <div class="mySlides">
+                                    <div class="numbertext">5 / 6</div>
+                                      <img src="https://bom.to/qNRYgm7QRkFjn" style="width:100%">
+                                  </div>
+                                  <div class="mySlides">
+                                    <div class="numbertext">6 / 6</div>
+                                      <img src="https://bom.to/lZP00WmyM7phA" style="width:100%">
+                                  </div>
+
+
+                                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                  <div class="caption-container" style="background-color: orange;">
+                                    
+                                  </div>
+
+                                  <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                                    <div class="column" >
+                                      <img class="demo cursor" src="https://bom.to/73UwpZuqW4a1J" style="width:100%" onclick="currentSlide(1)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo cursor" src="https://bom.to/njrdtAbeHGjY6" style="width:100%" onclick="currentSlide(2)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo cursor" src="https://bom.to/a1IMP1RPfvWlj" style="width:100%" onclick="currentSlide(3)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo cursor" src="https://bom.to/z2zrwdAa4daub" style="width:100%" onclick="currentSlide(4)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo cursor" src="https://bom.to/qNRYgm7QRkFjn" style="width:100%" onclick="currentSlide(5)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo cursor" src="https://bom.to/lZP00WmyM7phA" style="width:100%" onclick="currentSlide(6)" alt="">
+                                    </div>
+
+                                  </div>
+                            </div>   -->
+                            <div class="container" style="padding-top: 30px; padding-bottom: 20px;">
+                                <div class="row">
+                                    <div class="col-md-7 col-lg-7 col-xs-7">
+                                        <h5>KHÓA HỌC NÀY SẼ GIÚP BẠN:</h5>
+                                        <span>
+
+                                            <i class="fas fa-heart" style="color: red;"></i>&emsp;Sở hữu dáng đẹp eo thon như mong muốn. Tăng cường sức khỏe, đẩy lùi bệnh tật.<br>
+                                            <i class="fas fa-heart" style="color: red;"></i>&emsp;Trẻ hóa toàn thân, làm chậm quá trình lão hóa kéo dài tuổi xuân.Duy trì form chuẩn, dáng đứng thẳng, hạn chế tình trạng gù lưng.<br>
+                                            <i class="fas fa-heart" style="color: red;"></i>&emsp;Giải độc cơ thể, giảm stress hiệu quả. Tinh thần sảng khoái, vui vẻ, lạc quan, xả stress sau những giờ làm việc căng thẳng.<br>
+                                            <i class="fas fa-heart" style="color: red;"></i>&emsp;Khóa học yoga online không cần đến phòng tập    
+                                        </span>
+
+                                    </div>
+                                    <div class="col-md-5 col-lg-5 col-xs-5">
+                                      
+                                        <div style="background-color: orange; margin-top: 5px; margin-bottom: 5px; min-height: 50px; padding-top: 10px; border-radius: 20px; color: white;">
+                                            <h4 style="text-align: center;">YOGA LIFE</h4>
+                                         </div>   
+
+                                        <div class="row" style="padding-left: 15px;">
+                                            <form class="form-inline">
+                                                <label for="numberTicker" style="">Giá:</label>&emsp;
+                                                <input type="numberTicker" class="form-control" placeholder="" id="priceyoga" style="width: 60px;" value="200" disabled="">
+                                                <label for="numberTicker">&emsp;$</label>
+                                            <form>    
+                                        </div>
+                                        <center>
+                                            <div class="row" style="padding-bottom: 20px; padding-top: 20px;">
+                                                <div class="form-check-inline">
+                                                      <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input" name="optradio"  checked="" id="price3thang" onchange="check(3);"  value="3">3 tháng
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-check-inline">
+                                                      <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input" name="optradio"   id="price6thang" onchange="check(6);" value="6">6 tháng
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-check-inline disabled">
+                                                      <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input" name="optradio"  id="price12thang" onchange="check(12);"  value="12">12 tháng
+                                                      </label>
+                                                    </div>
+                                                
+                                            </div>
+                                            
+                                        </center>
+                                        
+                                        <div class="row" style="padding-left: 15px;">
+                                            <form class="form-inline">
+                                                <label style="margin-top: 6px;" for="numberTicker">Số lượng:</label>&emsp;
+                                                <input type="numberTicker" class="form-control" placeholder="" id="numberTicker" style="width: 80px;" value="1" onchange="num('YOGA_LIFE')">
+                                            <form>    
+                                        </div>
+                                         
+                                        <br>    
+                                       <center>
+                                            <div class="row" id="chon">
+                                              <div class="col-7">
+                                                <button class="btn btn-danger" onclick="pay('YOGA_LIFE')" type="button" data-toggle="modal"  data-target="#myModal">ĐẶT MUA NGAY</button> 
+                                              </div>
+                                              <div class="col-4 add">
+                                                <i class='fas fa-shopping-basket addi' onclick="add('YOGA_LIFE')"> </i> 
+                                              </div>
+                                            </div>   
+                                        </center>
+                                               
+                                    </div>    
+                                </div>
+                                   
+                            </div> 
+
+                        </div>
+                        <!-- End -->
+
+
+
+
+
+                        <!-- Begin -->
+
+                       <!--  <div class="card-header" style="background-color: orange; font-weight: bold; color: white;">
+                                <h3>DANCE ZUMBA</h3>
+                        </div>
+                        <div class="card-body" style="">
+                            <div class="container1">
+
+                                  <div class="mySlides2" style="">
+                                    <div class="numbertext">1 / 6</div>
+                                      <img src="https://bom.to/IpcSImHX5dY6R" style="width:100%;">
+                                  </div>
+
+                                  <div class="mySlides2">
+                                    <div class="numbertext">2 / 6</div>
+                                      <img src="https://bom.to/RIRyFFKHjBv9g" style="width:100%">
+                                  </div>
+
+                                  <div class="mySlides2">
+                                    <div class="numbertext">3 / 6</div>
+                                      <img src="https://bom.to/iuh27Suf18UUH" style="width:100%">
+                                  </div>
+
+                                  <div class="mySlides2">
+                                    <div class="numbertext">4 / 6</div>
+                                      <img src="https://bom.to/n8yNw80zdmTso" style="width:100%">
+                                  </div>
+                                  <div class="mySlides2">
+                                    <div class="numbertext">5 / 6</div>
+                                      <img src="https://bom.to/98iMHRQG4OvmQ" style="width:100%">
+                                  </div>
+                                  <div class="mySlides2">
+                                    <div class="numbertext">6 / 6</div>
+                                      <img src="https://bom.to/RIRyFFKHjBv9g" style="width:100%">
+                                  </div>
+
+
+                                  <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                                  <div class="caption-container" style="background-color: orange;">
+                                    
+                                  </div>
+
+                                  <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                                    <div class="column" >
+                                      <img class="demo2 cursor" src="https://bom.to/IpcSImHX5dY6R" style="width:100%" onclick="currentSlide2(1)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo2 cursor" src="https://bom.to/RIRyFFKHjBv9g" style="width:100%" onclick="currentSlide2(2)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo2 cursor" src="https://bom.to/iuh27Suf18UUH" style="width:100%" onclick="currentSlide2(3)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo2 cursor" src="https://bom.to/n8yNw80zdmTso" style="width:100%" onclick="currentSlide2(4)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo2 cursor" src="https://bom.to/98iMHRQG4OvmQ" style="width:100%" onclick="currentSlide2(5)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo2 cursor" src="https://bom.to/RIRyFFKHjBv9g" style="width:100%" onclick="currentSlide2(6)" alt="">
+                                    </div>
+
+                                  </div>
+                            </div>   -->
+                            <div class="container" style="padding-top: 30px; padding-bottom: 20px;">
+                                <div class="row">
+                                    <div class="col-md-7 col-lg-7 col-xs-7">
+                                        <h5>KHÓA HỌC NÀY SẼ GIÚP BẠN:</h5>
+                                        <span>
+
+                                            <i class="fas fa-heart" style="color: red;"></i>&emsp;Giữ cho cơ thể săn chắc, hệ cơ, hệ tim mạch cải thiện rất nhiều.<br>
+                                            <i class="fas fa-heart" style="color: red;"></i>&emsp;Duy trì form chuẩn, dáng đứng thẳng, hạn chế tình trạng gù lưng. Trẻ hóa toàn thân, làm chậm quá trình lão hóa kéo dài tuổi xuân.<br>
+                                            <i class="fas fa-heart" style="color: red;"></i>&emsp;Tinh thần sảng khoái, vui vẻ, lạc quan, xả stress sau những giờ làm việc căng thẳng.<br>
+                                            <i class="fas fa-heart" style="color: red;"></i>&emsp;Tự tin thể hiện và “phiêu” tại các bữa tiệc cùng bạn bè, sẵn sàng tham gia giao lưu kết bạn và hòa nhập tập thể với đa dạng phong cách và văn hóa khác nhau.    
+                                        </span>
+
+                                    </div>
+                                    <div class="col-md-5 col-lg-5 col-xs-5">
+                                      
+                                        <div style="background-color: orange; margin-top: 5px; margin-bottom: 5px; min-height: 50px; padding-top: 10px; border-radius: 20px; color: white;">
+                                            <h4 style="text-align: center;">DANCE ZUMBA</h4>
+                                         </div>   
+
+                                        <div class="row" style="padding-left: 15px;">
+                                            <form class="form-inline">
+                                                <label for="numberTicker" style="padding-top: 8px;">Giá:</label>&emsp;
+                                                <input type="numberTicker" class="form-control" placeholder="" id="pricedance" style="width: 60px;" value="300" disabled="">
+                                                <label for="numberTicker" style="padding-top: 8px;">&emsp;$</label>
+                                            <form>    
+                                        </div>
+                                        <center>
+                                            <div class="row" style="padding-bottom: 20px; padding-top: 20px;">
+                                                <div class="form-check-inline">
+                                                      <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input" name="optradio2"  checked="" id="price3thang" onchange="checkdance(3);"  value="3">3 tháng
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-check-inline">
+                                                      <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input" name="optradio2"   id="price6thang" onchange="checkdance(6);" value="6">6 tháng
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-check-inline disabled">
+                                                      <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input" name="optradio2"  id="price12thang" onchange="checkdance(12);" value="12" >12 tháng
+                                                      </label>
+                                                    </div>
+                                                
+                                            </div>
+                                            
+                                        </center>
+                                        
+                                        <div class="row" style="padding-left: 15px;">
+                                            <form class="form-inline">
+                                                <label style="margin-top: 6px;" for="numberTicker">Số lượng:</label>&emsp;
+                                                <input type="numberTicker" class="form-control" placeholder="" id="numberTicker2" style="width: 80px;" value="1" onchange="num('DANCE_ZUMBA')">
+                                            <form>    
+                                        </div>
+                                         
+                                        <br>    
+                                       <center>
+                                            <div class="row" id="chon">
+                                              <div class="col-7">
+                                                <button class="btn btn-danger" onclick="pay('DANCE_ZUMBA')" type="button" data-toggle="modal"  data-target="#myModal">ĐẶT MUA NGAY</button> 
+                                              </div>
+                                              <div class="col-4 add">
+                                                <i class='fas fa-shopping-basket addi' onclick="add('DANCE_ZUMBA')"> </i> 
+                                              </div>
+                                            </div>   
+                                        </center>
+                                               
+                                    </div>    
+                                </div>
+                                   
+                            </div> 
+
+                        </div>
+                        <!-- End -->
+
+
+
+                        <!-- Begin -->
+
+                       <!--  <div class="card-header" style="background-color: orange; font-weight: bold; color: white;">
+                                <h3>AEROBIC</h3>
+                        </div>
+                        <div class="card-body" style="">
+                            <div class="container1">
+
+                                  <div class="mySlides3" style="">
+                                    <div class="numbertext">1 / 6</div>
+                                      <img src="https://bom.to/00GzQu0aNUpHS" style="width:100%;">
+                                  </div>
+
+                                  <div class="mySlides3">
+                                    <div class="numbertext">2 / 6</div>
+                                      <img src="https://bom.to/KlZP6FevDWJYB" style="width:100%">
+                                  </div>
+
+                                  <div class="mySlides3">
+                                    <div class="numbertext">3 / 6</div>
+                                      <img src="https://bom.to/r8rArbkaHqPRe" style="width:100%">
+                                  </div>
+
+                                  <div class="mySlides3">
+                                    <div class="numbertext">4 / 6</div>
+                                      <img src="https://bom.to/iTJuf3YdYIBWQ" style="width:100%">
+                                  </div>
+                                  <div class="mySlides3">
+                                    <div class="numbertext">5 / 6</div>
+                                      <img src="https://bom.to/6zsWp8aiGDU50" style="width:100%">
+                                  </div>
+                                  <div class="mySlides3">
+                                    <div class="numbertext">6 / 6</div>
+                                      <img src="https://bom.to/RIRyFFKHjBv9g" style="width:100%">
+                                  </div>
+
+
+                                  <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                                  <div class="caption-container" style="background-color: orange;">
+                                    
+                                  </div>
+
+                                  <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                                    <div class="column" >
+                                      <img class="demo3 cursor" src="https://bom.to/00GzQu0aNUpHS" style="width:100%" onclick="currentSlide3(1)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo3 cursor" src="https://bom.to/KlZP6FevDWJYB" style="width:100%" onclick="currentSlide3(2)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo3 cursor" src="https://bom.to/r8rArbkaHqPRe" style="width:100%" onclick="currentSlide3(3)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo3 cursor" src="https://bom.to/iTJuf3YdYIBWQ" style="width:100%" onclick="currentSlide3(4)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo3 cursor" src="https://bom.to/6zsWp8aiGDU50" style="width:100%" onclick="currentSlide3(5)" alt="">
+                                    </div>
+                                    <div class="column">
+                                      <img class="demo3 cursor" src="https://bom.to/RIRyFFKHjBv9g" style="width:100%" onclick="currentSlide3(6)" alt="">
+                                    </div>
+
+                                  </div>
+                            </div>   -->
+                            <div class="container" style="padding-top: 30px; padding-bottom: 20px;">
+                                <div class="row">
+                                    <div class="col-md-7 col-lg-7 col-xs-7">
+                                        <h5>KHÓA HỌC NÀY SẼ GIÚP BẠN:</h5>
+                                        <span>
+
+                                            <i class="fas fa-heart" style="color: red;"></i>&emsp;Ngăn ngừa một số căn bệnh, thoải mái hơn mỗi ngày.Kiểm soát trọng lượng.<br>
+                                            <i class="fas fa-heart" style="color: red;"></i>&emsp;Giảm nguy cơ nhiễm mỡ trong máu.Giảm tốc độ lão hóa cơ thể.<br>
+                                            <i class="fas fa-heart" style="color: red;"></i>&emsp;Củng cố một khung xương khỏe.Loại trừ sự đau cơ..<br>
+                                            <i class="fas fa-heart" style="color: red;"></i>&emsp;Rèn luyện sự dẻo dai của cơ thể. Làn da giữ sắc xuân lâu dài hơn.    
+                                        </span>
+
+                                    </div>
+                                    <div class="col-md-5 col-lg-5 col-xs-5">
+                                      
+                                        <div style="background-color: orange; margin-top: 5px; margin-bottom: 5px; min-height: 50px; padding-top: 10px; border-radius: 20px; color: white;">
+                                            <h4 style="text-align: center;">AEROBIC GIẢM CÂN</h4>
+                                         </div>   
+
+                                        <div class="row" style="padding-left: 15px;">
+                                            <form class="form-inline">
+                                                <label for="numberTicker" style="padding-top: 8px;">Giá:</label>&emsp;
+                                                <input type="numberTicker" class="form-control" placeholder="" id="pricea" style="width: 60px;" value="300" disabled="">
+                                                <label for="numberTicker" style="padding-top: 8px;">&emsp;$</label>
+                                            <form>    
+                                        </div>
+                                        <center>
+                                            <div class="row" style="padding-bottom: 20px; padding-top: 20px;">
+                                                <div class="form-check-inline">
+                                                      <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input" name="optradio3"  checked="" id="price3thang" onchange="checka(3);" value="3">3 tháng
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-check-inline">
+                                                      <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input" name="optradio3"   id="price6thang" onchange="checka(6);" value="6">6 tháng
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-check-inline disabled">
+                                                      <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input" name="optradio3"  id="price12thang" onchange="checka(12);"  value="12">12 tháng
+                                                      </label>
+                                                    </div>
+                                                
+                                            </div>
+                                            
+                                        </center>
+                                        
+                                        <div class="row" style="padding-left: 15px;">
+                                            <form class="form-inline">
+                                                <label style="margin-top: 6px;" for="numberTicker">Số lượng:</label>&emsp;
+                                                <input type="numberTicker" class="form-control" placeholder="" id="numberTicker3" style="width: 80px;" value="1" onchange="num('AEROBIC')">
+                                            <form>    
+                                        </div>
+                                         
+                                        <br>    
+                                        <center>
+                                            <div class="row" id="chon">
+                                              <div class="col-7">
+                                                <button class="btn btn-danger" onclick="pay('AEROBIC')"  type="button" data-toggle="modal"  data-target="#myModal">ĐẶT MUA NGAY</button> 
+                                              </div>
+                                              <div class="col-4 add">
+                                                <i class='fas fa-shopping-basket addi' onclick="add('AEROBIC')"> </i> 
+                                              </div>
+                                            </div>   
+                                        </center>
+                                               
+                                    </div>    
+                                </div>
+                                   
+                            </div> 
+
+                        </div>
+                        <!-- End -->
+
+
+                 
+                        
+                    </div>
+
+                    
+                   <button class="shopcart-btn"  data-toggle="modal"  data-target="#myModal" type="button">
+                      <span class="ng-star-inserted">
+                        <i class="fas fa-shopping-cart fa-lg"></i>
+                        <input class="shopcart-number" id="numbercart" value="0" disabled="true"></input>
+                      </span>
+                  </button>
+                   
+                       
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal">
+  <div class="modal-dialog" style="margin-left: 300px;">
+    <div class="modal-content" style="width: 1000px;">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Giỏ Hàng</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <table class="table table-bordered table-striped bg-white" >
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Num</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="card_list">
+           
+          </tbody>
+        </table>
+          <div class="row bg-white" style="margin: 5px;">
+            <div class="col-md-8">
+              Total Money:
+            </div>
+            <div class="col-md-4" style="float: right; margin-bottom: 20px;">
+              <input disabled="true"  class="form-control  nummm"  maxlength="2" type="tel" value="0" id="tol" >
+            </div>                                      
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal"><a href="" style="text-decoration: none; color: white;" onclick="save()">Thanh Toán</a></button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+                   
+                       
+                </div>
+            </div>
+        </div>
+
+<div> </div>
+    </body>
+
+ 
+
+   <footer></footer>
+
+
+ 
+   <script type="text/javascript">
+
+         
+var dataList =[];
+          
+   
+
+        function check(n) {
+            switch (n) {
+                case 3:
+                    document.getElementById("priceyoga").value = 200;
+                    
+                    adddata("YOGA_LIFE",document.getElementById("numberTicker").value,`${n} tháng`,200)
+                    break;
+                case 6:
+                    document.getElementById("priceyoga").value = 180;
+                    adddata("YOGA_LIFE",document.getElementById("numberTicker").value,`${n} tháng`,180)
+                    break;
+                case 12:
+                    document.getElementById("priceyoga").value = 150;
+                    adddata("YOGA_LIFE",document.getElementById("numberTicker").value,`${n} tháng`,150)
+                    break;
+
+                default:
+                    break;
+            }
+        
+           
+       }
+       
+
+        var box = ['YOGA_LIFE','DANCE_ZUMBA','AEROBIC']; 
+        var idnum = ['numberTicker','numberTicker2','numberTicker3'];
+        var idmoney = ['priceyoga','pricedance','pricea'];
+        var idthang = ['optradio','optradio2','optradio3']
+        var isFind = false;
+         var isFinda = false;
+        function num(name) {
+
+         for (var i = 0; i < box.length; i++) {
+            var checkname = box[i];
+              
+              if(name == checkname){
+                var t = "3 tháng";
+                var x = document.getElementById(idnum[i]).value
+                var y = document.getElementById(idmoney[i]).value 
+
+                for (var j = 0; j < dataList.length; j++) {
+                   isFinda = false;
+                   if(dataList[j].name == checkname) {
+                      //san pham da ton tai => tang num
+                    x =  dataList[j].num ;
+                    t = dataList[j].type ;
+                    y= dataList[j].total;
+                      isFinda = true;
+                      break;
+                   }
+                }
+                  
+                   if(!isFinda) {
+                      adddata(name,x,t,y)
+                      save()
+                  }
+               
+
+           
+                  }
+              }
+          
+
+       }
+       function save() {
+         var  baka= JSON.stringify(dataList)
+
+         localStorage.setItem('shop', baka)
+         // var   cardList =  localStorage.getItem('shop')
+        console.log(baka)
+  
+        
+       }
+         function adddata(indexx,val,thang,Money) {
+       
+ 
+            for (var i = 0; i < dataList.length; i++) {
+              isFind = false;
+             if(dataList[i].name == indexx) {
+                //san pham da ton tai => tang num
+                dataList[i].num = val;
+                dataList[i].type = thang;
+                dataList[i].total = Money;
+
+                isFind = true;
+                break;
+             }
+          }
+            
+             if(!isFind) {
+               dataList.push({
+                  'name': indexx,
+                  'num': val,
+                  'type': thang,
+                  'total': Money
+               })
+            }
+
+            save()
+          }
+             var totalMoney = 0
+          function showCart() {
+             totalMoney = 0 ;
+            $('#card_list').empty()
+            for (var i = 0; i < dataList.length; i++) {
+              p = dataList[i]
+              var a = p.total * p.num
+              totalMoney +=  a
+              if(p === undefined) continue;
+              $('#card_list').append(`<tr>
+                    <td>${p.name}</td>
+                    <td>${p.type}</td>
+                    <td>${p.num}</td>
+                    <td>${p.total * p.num}</td>
+                    <td><button type="button" class="btn btn-danger" >Xóa</button></td>
+                  </tr>`)
+              $('#tol').val(totalMoney)
+            }
+showCart()
+
+      }
+
+         function pay(name) {
+          for (var i = 0; i < box.length; i++) {
+            var checkname = box[i];
+              
+              if(name == checkname){
+                var t = "3 tháng";
+                var x = document.getElementById(idnum[i]).value
+                var y = document.getElementById(idmoney[i]).value 
+
+               
+                for (var j = 0; j < dataList.length; j++) {
+                   isFinda = false;
+                   if(dataList[j].name == checkname) {
+                      //san pham da ton tai => tang num
+                    x =  dataList[j].num ;
+                       t = dataList[j].type ;
+                     y= dataList[j].total;
+                      isFinda = true;
+                      break;
+                   }
+                }
+                  
+                   if(!isFinda) {
+                      adddata(name,x,t,y)
+                  }
+           
+                }
+            }
+     }  
+      function add(name) {
+          for (var i = 0; i < box.length; i++) {
+            var checkname = box[i];
+              
+              if(name == checkname){
+                var t = "3 tháng";
+                var x = document.getElementById(idnum[i]).value
+                var y = document.getElementById(idmoney[i]).value 
+
+              
+                 for (var j = 0; j < dataList.length; j++) {
+                   isFinda = false;
+                   if(dataList[j].name == checkname) {
+                      //san pham da ton tai => tang num
+                    x =  dataList[j].num ;
+                       t = dataList[j].type ;
+                     y= dataList[j].total;
+                      isFinda = true;
+                      break;
+                   }
+                }
+                  
+                   if(!isFinda) {
+                      adddata(name,x,t,y)
+                  }
+                  
+           
+                }
+            }
+     }
+
+       function checkdance(n) {
+            switch (n) {
+                case 3:
+                    document.getElementById("pricedance").value = 300;
+                     adddata("DANCE_ZUMBA",document.getElementById("numberTicker2").value,`${n} tháng`,300)
+                    break;
+                case 6:
+                    document.getElementById("pricedance").value = 270;
+                      adddata("DANCE_ZUMBA",document.getElementById("numberTicker2").value,`${n} tháng`,270)
+                    break;
+                case 12:
+                    document.getElementById("pricedance").value = 250;
+                       adddata("DANCE_ZUMBA",document.getElementById("numberTicker2").value,`${n} tháng`,250)
+                    break;
+
+                default:
+                    break;
+            }
+        
+           
+       }
+
+       function checka(n) {
+            switch (n) {
+                case 3:
+                    document.getElementById("pricea").value = 300;
+                    adddata("AEROBIC",document.getElementById("numberTicker3").value,`${n} tháng`,300)
+                    break;
+                case 6:
+                    document.getElementById("pricea").value = 270;
+                    adddata("AEROBIC",document.getElementById("numberTicker3").value,`${n} tháng`,270)
+
+                    break;
+                case 12:
+                    document.getElementById("pricea").value = 250;
+                    adddata("AEROBIC",document.getElementById("numberTicker3").value,`${n} tháng`,250)
+                    break;
+
+                default:
+                    break;
+            }
+        
+           
+       }
+
+       
+
+       
+      
+   </script>
+  <script  src="slide-shop1.js"></script>
+    <script  src="slide-shop2.js"></script>
+     <script  src="slide-shop3.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</html>  
