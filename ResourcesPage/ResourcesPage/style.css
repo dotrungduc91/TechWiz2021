@@ -400,3 +400,34 @@ body h4 {
 	font-style: normal;
 	line-height: 1.1em;
 }
+
+.bmi-border {
+	border: 1px solid;
+	width: 100%;
+	height: auto;
+	border-radius: 13px;
+	float: right;
+}
+
+.bmi-border-title {
+	padding: 16px 15px;
+}
+
+.bmi-border-display {
+	max-width: 100px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.bmi-border-import h4 {
+	margin-left: 30px;
+}
+
+.bmi-content span {
+	text-transform: uppercase;
+    font-size: 16px;
+    color: #444;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.1em;
+}
