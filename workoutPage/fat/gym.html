@@ -1,84 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tập Gym</title>
+	<title>Tập Cardio</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="workout.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	  <link rel="stylesheet" type="text/css" href="index.css">
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="ob">
-			<h1 class="title">Các bài tập Gym</h1>
-			<p class="run1">1.Bài tập Gym giảm cân Incline Dumbbell </p>
-			<img src="img8.jpg" class="img">
-			<p>Incline Dumbbell Flyes là bài tập Gym dành cho cơ ngực, giúp nhóm cơ này săn chắc hơn, hỗ trợ đốt cháy mỡ thừa hiệu quả. Hướng dẫn chi tiết bài tập Gym này như sau:<br>
+	<div class="navigation d-none d-lg-block">
+	    <nav class="navbar navbar-expand-sm  navbar-dark">
+	        <div class="navbar-header">
+	          <a class="navbar-brand" href="#">Fit 4 Life</a>
+	          <a  href=""><i class="fab fa-facebook-f"></i></a>
+	          <a  href=""><i class="fab fa-twitter"></i></a>
+	        </div>
+	        <ul class="navbar-nav">
+	          <li ><a href="">Trang chủ</a></li>
+	          <li><a href="../ResourcesPage/ResourcesPage/BMI.html">Chỉ số BMI</a></li>
+	          <li><a href="../ResourcesPage/ResourcesPage/resources.html">Địa chỉ luyện tập</a></li>
+	          <li><a href="#">Khóa học</a></li>
+	           <li><a href="#">Giới thiệu</a></li>
+	          <li><a href="#">Liên hệ</a></li>
+	          <li><a type="button" data-toggle="modal" data-target="#myModal">Đăng nhập</a></li>
+	        </ul>
+	    </nav>
+	  </div>
 
-			- Bắt đầu với tư thế ngồi trên ghế đã điều chỉnh độ dốc lên 30-45 độ. Đặt 2 quả tạ có trọng lượng phù hợp với cơ thể ở 2 bên đùi, lòng bàn tay hướng vào nhau.<br>
-
-			- Nằm xuống ghế dốc đồng thời đẩy đùi lên để đưa 2 quả tạ lên.<br>
-
-			- Nâng 2 quả tạ lên phía vai, lòng bàn tay hướng vào nhau, 2 quả tạ song song và cách nhau một khoảng. Cánh tay hơi cong lại, bắp tay không bị căng.<br>
-
-			- Hạ tạ xuống bằng cách mở rộng cánh tay theo hình vòng cung sang 2 bên. Hít vào khi hạ tạ xuống. Mở rộng cơ ngực ra cho đến khi căng cứng.<br>
-
-			- Thở ra, sử dụng cơ ngực kéo 2 cánh tay trở lại theo hình vòng cung như lúc đi xuống.<br>
-
-			- Tiếp tục lặp lại động tác 15 lần/hiệp. Thực hiện 4 hiệp thì kết thúc bài tập.</p>
-
-			Giữa mỗi hiệp nghỉ 15 giây và hiệp cuối nghỉ 30 giây để chuyển bài.</p>
-			<iframe width="560" height="415" src="https://www.youtube.com/embed/ewkmMvQjhIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
+	  <!-- Navigation cho Mobile -->
+	    <div class="navigation_mobile d-block d-lg-none">
+	<div class="mobile-container">
+	<!-- Top Navigation Menu -->
+	<div class="topnav">
+	  <a href="#home" class="active">Fit 4 Life</a>
+	  <div id="myLinks">
+	    <a href="#">Trang chủ</a>
+	    <a href="../ResourcesPage/ResourcesPage/BMI.html">Chỉ số BMI</a>
+	    <a href="../ResourcesPage/ResourcesPage/resources.html">Địa chỉ luyện tập</a>
+	    <a href="#">Khóa học</a>
+	    <a href="#">Giới thiệu</a>
+	    <a href="#">Liên hệ</a>
+	    <a type="button" data-toggle="modal" data-target="#myModal">Đăng nhập</a>
+	  </div>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
 	</div>
-	<<div class="container">
-		<div class="ob">
-			<p class="run1">2.Bài tập Gym giảm cân Barbell Bench Press. </p>
-			<img src="img9.jpg" class="img">
-			<p>Barbell Bench Press cũng là bài tập ngực ngồi đẩy tạ đơn trên ghế dốc. Tập luyện đúng cách bài tập này sẽ giúp cơ ngực của bạn săn chắc hơn, hỗ trợ giảm mỡ béo rất tốt. Hướng dẫn cách bước tập luyện cụ thể như sau:<br>
-    		
-    		Bạn trong tư thế nằm ngửa trên ghế tập phẳng, 2 tay nắm lấy thanh tạ đòn có trọng lượng thích hợp sao cho khoảng cách 2 tay rộng hơn vai, cẳng tay tạo thành góc 90 độ.<br>
-
-			- Nhấc tay tạ đòn khỏi giá tập, tay để thẳng nhưng không khóa khớp.<br>
-
-			- Hít vào, căng cơ ngực rồi từ từ hạ tạ xuống cho đến khi thanh đòn chạm ngực giữa của bạn. Giữ vị trí đó trong vài giây.<br>
-
-			- Thở ra, đẩy thanh tạ đòn lên vị trí ban đầu bằng cách siết cơ ngực tại điểm cao nhất.<br>
-
-			- Lặp lại toàn bộ động tác 15 lần/hiệp, thực hiện 3 hiệp, giữa mỗi hiệp nghỉ 15 giây và hiệp cuối nghỉ 30 giây để chuyển bài.</p>
-			<iframe width="560" height="415" src="https://www.youtube.com/embed/9_JPTA3ie7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
 	</div>
-	<div class="container">
-		<div class="ob">
-			<p class="run1">3.Bài tập Gym giảm cân Dumbbell Biceps Curls.</p>
-			<img src="img10.png" class="img">
-			<p>Dumbbell Biceps Curls là bài tập Gym tác động lên cơ bắp tay trước, có tác dụng tiêu hao mỡ thừa, giúp giảm cân nhanh chóng cho cơ bắp chắc khỏe. Hướng dẫn chi tiết bài tập cơ bắp tay trước giảm cân như sau:
-			<br>
-			- Chọn 2 quả tạ  có trọng lượng bằng nhau và phù hợp với thể lực của bạn. <br>
-			- Bạn trong tư thế đứng thẳng, 2 chân mở rộng bằng vai, mỗi tay cầm chắc 1 quả tạ đơn. Khuỷu tay gần với thân mình, lòng bàn tay hướng lên trên. Đây là vị trí bắt đầu của bạn.<br>
-			- Thở ra, co cơ bắp tay trước, cuốn tạ về phía trước. Đưa tạ tiếp tục lên đến ngang vai, cơ bắp tay cơ hết cỡ. Giữ vị trí này trong vài giây và gồng mạnh cơ bắp tay.<br>
-			- Tiếp tục lặp lại động tác 15 lần/hiệp. Thực hiện 4 hiệp thì kết thúc bài tập.<br>
-			- Giữa mỗi hiệp nghỉ 15 giây và hiệp cuối nghỉ 30 giây để chuyển bài.
-			</p>
-			<iframe width="560" height="415" src="https://www.youtube.com/embed/yTWO2th-RIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
 	</div>
 	<div class="container">
 		<div class="ob">
-			<p class="run1">4.Bài tập Gym giảm cân Leg Extension</p>
-			<img src="img11.jpg" class="img">
-			<p>Leg Extension là bài tập đùi trước hiệu quả được nhiều Gymer yêu thích tập luyện. Nhờ bài tập Gym này, bắp đùi của bạn sẽ săn chắc hơn, tăng cơ giảm mỡ rất rõ rệt. Hướng dẫn chi tiết các bước thực hành bài tập Gym giảm cân này như sau:
-			<br>
-			- Trước tiên, bạn cần điều chỉnh mức tạ phù hợp trên hệ thống máy tập.<br>
-			- Điều chỉnh ghế ngồi của máy tập đùi trước sao cho phù hợp với chiều cao của bạn, rồi ngồi vào ghế tập, lưng dựa sát vào ghế.<br>
-			- Duỗi thẳng chân ra trong khi thở ra. Toàn bộ thân người vẫn cố định trên ghế. Ngưng lại 1 giây ở cuối động tác.<br>
-			- Từ từ hạ tạ xuống vị trí bắt đầu trong khi hít vào. Lưu ý không để chân gập quá 90 độ.<br>
-			- lặp lại toàn bộ động tác để tiếp tục bài tập cho đến khi đạt số lần được yêu cầu.</p>
-			<iframe width="560" height="415" src="https://www.youtube.com/embed/vRQpiTwUeyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
+			<h1 class="title">Các bài tập Cardio</h1>
+		</div>	
 	</div>
+
+	<div id="data" style="width: 100%"></div>
+
+	
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	 <script type="text/javascript"  src="gym.js"></script>
 </body>
 </html>

@@ -86,14 +86,14 @@
 					<div class="sqs-block button-block sqs-block-button">
 						<div class="sqs-block-content">
 							<div class="sqs-block-button-container--center" >
-								<a href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none; border-radius: 20px!important;"target="_blank" id="chedoan" onclick="chedoanChangePage()" >Chế độ ăn</a>
+								<a  href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none; border-radius: 20px!important;"target="_blank" id="chedoan" onclick="chedoanChangePage()" >Chế độ ăn</a>
 							</div>
 						</div>
 					</div>
 					<div class="sqs-block button-block sqs-block-button">
 						<div class="sqs-block-content">
 							<div class="sqs-block-button-container--center" id="chedoltap">
-								<a href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none;  border-radius: 20px;" target="_blank" onclick="chedoluyentapChangePage()">Luyện tập</a>
+								<a  href="" class="sqs-block-button-element--small sqs-block-button-element" style="text-decoration: none;  border-radius: 20px;"target="_blank" onclick="chedoluyentapChangePage()">Luyện tập</a>
 							</div>
 						</div>
 					</div>
@@ -147,7 +147,14 @@ window.location.href = "../../DietPage/nguoibeo/diet_plan.html";
 		}
 
 		function chedoluyentapChangePage(){
+					if (chiSoBMI<18.5) {
+				window.location.href = "../../workoutPage/thin/listThin.html";
+			} else if(chiSoBMI>=25){
+window.location.href = "../../workoutPage/fat/listFat.html";
+			} else{
+				window.location.href = "../../workoutPage/normal/listNormal.html";
 			
 		}
+	}
 </script>
-</html>
+</html
