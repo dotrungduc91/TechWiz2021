@@ -4,7 +4,6 @@ $(document).ready(function(){
 
 function loadData(){
 	$.getJSON("do_uong_beo.json", function(data){
-		alert("ok");
 		console.log(data);
 		for(element of data){
 			console.log(data);

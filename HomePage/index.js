@@ -46,15 +46,15 @@ function changeBackground(){
 
 	switch(countBackground){
 		case 1:
-		background.style.background = "url('img/banner1.jpg')";
+		background.style.background = "url('img/3.jpg')";
 		break;
 
 		case 2:
-		background.style.background = "url('img/banner2.jpg')";
+		background.style.background = "url('img/4.jpg')";
 		break;
 
 		case 3:
-		background.style.background = "url('img/banner3.jpg')";
+		background.style.background = "url('img/1.jpg')";
 		break;
 	}
 	countBackground++;

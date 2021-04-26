@@ -43,14 +43,29 @@
   color: white;
 }
 
-.navigation{
-  position: fixed;
-  top: 0px;
-  opacity: 1!important;
+
+
+.navigation_mobile .topnav{
+  background: black;
+  
 }
 
-.navigation img{
+.navigation_mobile .topnav a{
+  background: black;
+}
+
+.navigation_mobile .topnav .active{
+  font-size: 2rem;
+}
+
+.navigation_mobile .topnav .icon{
+  color: red;
+}
+
+.navigation_mobile img{
   width: 100%;
+  background: black;
+  color: white;
 }
 /*#background{
   width: 100%;
